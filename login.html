@@ -1,0 +1,11 @@
+            <form method="POST" action="secure.php">
+            User <input type="text" name="user"></input><br/>
+            Pass <input type="password" name="pass"></input><br/>
+            <input type="submit" name="submit" value="Go"></input>
+            </form>
+<?php 
+ob_start();
+include 'myvars.php';
+ob_end_clean();
+echo $check_real;
+?>
